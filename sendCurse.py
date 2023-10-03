@@ -4,7 +4,7 @@ import sys
 
 try:
 	target_host = sys.argv[1]
-	target_port = 0 
+	target_port = int(input("Please input the desired port: "))
 	
 	#Create a socket object
 	client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
